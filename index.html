@@ -61,7 +61,7 @@
   <body>
     <h1>Full-Size Pages Calculator By: Anav</h1>
     <form>
-      <label for="half-pages">Total number of half-size pages:</label>
+      <label for="half-pages">Total number of half-size pages (remember to add your title page):</label>
       <input type="number" id="half-pages" name="half-pages"><br><br>
       <input type="submit" value="Calculate">
     </form>
@@ -75,7 +75,7 @@
         event.preventDefault();
 
         const halfPages = parseInt(document.getElementById('half-pages').value);
-        const usedHalfPages = halfPages - 2;
+        const usedHalfPages = halfPages - 3;
         const fullPages = Math.ceil(usedHalfPages / 4) + 1;
 
         output.innerText = `You need ${fullPages} full-size pages.`;
