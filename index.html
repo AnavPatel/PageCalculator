@@ -75,7 +75,7 @@
         event.preventDefault();
 
         const halfPages = parseInt(document.getElementById('half-pages').value);
-        const usedHalfPages = halfPages - 3;
+        const usedHalfPages = halfPages - 2;
         const fullPages = Math.ceil(usedHalfPages / 4) + 1;
 
         output.innerText = `You need ${fullPages} full-size pages.`;
